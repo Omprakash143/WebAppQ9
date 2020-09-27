@@ -11,7 +11,7 @@ pipeline{
                 gitCheckout(
                     
                     branch: "master",
-                    url: "https://github.com/bhanu-prakash3/simplewebapp.git"
+                    url: "https://github.com/Omprakash143/WebAppQ9.git"
                 )
             }
         }
@@ -28,9 +28,7 @@ pipeline{
                 deployTomcat( 
                     war: "target/java-tomcat-maven-example.war"
                       )
-                 
-                //step([$class: 'DockerComposeBuilder', dockerComposeFile: 'docker-compose.yml', option: [$class: 'StartAllServices'], useCustomDockerComposeFile: true])
-            }   
+                 }   
         }
         
     }   
